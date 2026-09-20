@@ -1,9 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-import workVantage from "../assets/work-vantage.jpg";
-import workNorthwind from "../assets/work-northwind.jpg";
-import workFrame09 from "../assets/work-frame09.jpg";
-import workKettle from "../assets/work-kettle.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -201,39 +197,27 @@ function Services() {
 
 const workItems = [
   {
-    image: workVantage,
     title: "Vantage — rebrand",
     category: "Identity",
     aspect: "aspect-[4/5]",
-    width: 1024,
-    height: 1280,
     offset: false,
   },
   {
-    image: workNorthwind,
     title: "Northwind — web",
     category: "Development",
     aspect: "aspect-square",
-    width: 1024,
-    height: 1024,
     offset: true,
   },
   {
-    image: workFrame09,
     title: "Frame 09 — film",
     category: "Motion",
     aspect: "aspect-square",
-    width: 1024,
-    height: 1024,
     offset: false,
   },
   {
-    image: workKettle,
     title: "Kettle — packaging",
     category: "Design",
     aspect: "aspect-[4/5]",
-    width: 1024,
-    height: 1280,
     offset: true,
   },
 ];
@@ -253,15 +237,12 @@ function Work() {
             className={`group block animate-rise-slow ${item.offset ? "mt-6" : ""}`}
             style={{ animationDelay: `${index * 80}ms` }}
           >
-            <div className="bg-foreground/5 outline outline-1 -outline-offset-1 outline-border rounded-lg overflow-hidden">
-              <img
-                src={item.image}
-                alt={item.title}
-                width={item.width}
-                height={item.height}
-                loading="lazy"
-                className={`w-full ${item.aspect} object-cover transition-transform duration-500 group-hover:scale-105`}
-              />
+            <div
+              className={`flex items-center justify-center bg-foreground/5 outline outline-1 -outline-offset-1 outline-border rounded-lg ${item.aspect} transition-colors duration-300 group-hover:bg-foreground/10`}
+            >
+              <span className="font-display uppercase text-3xl text-ember/40">
+                {String(index + 1).padStart(2, "0")}
+              </span>
             </div>
             <p className="mt-2.5 text-sm font-medium leading-tight">{item.title}</p>
             <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-muted">
