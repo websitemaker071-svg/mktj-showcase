@@ -256,9 +256,9 @@ function Work() {
 }
 
 const teamMembers = [
-  { initials: "AM", name: "Ari Malik", role: "Director" },
-  { initials: "SR", name: "Sana Riaz", role: "Lead dev" },
-  { initials: "DK", name: "Dev Kapoor", role: "Motion" },
+  { name: "Ari Malik", role: "Director" },
+  { name: "Sana Riaz", role: "Lead dev" },
+  { name: "Dev Kapoor", role: "Motion" },
 ];
 
 function About() {
@@ -278,20 +278,17 @@ function About() {
         no hand-offs — just the people making your work, from first sketch to final
         cut.
       </p>
-      <div className="mt-8 grid grid-cols-3 gap-3 max-w-3xl mx-auto">
+      <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-3xl">
         {teamMembers.map((member, index) => (
           <div
             key={member.name}
-            className="animate-rise-slow"
+            className="p-4 rounded-lg bg-foreground/5 outline outline-1 -outline-offset-1 outline-border animate-rise-slow"
             style={{ animationDelay: `${160 + index * 80}ms` }}
           >
-            <div className="aspect-[3/4] flex items-center justify-center bg-foreground/5 outline outline-1 -outline-offset-1 outline-border rounded-lg">
-              <span className="font-display text-4xl text-ember/60">
-                {member.initials}
-              </span>
-            </div>
-            <p className="mt-2 text-sm font-medium">{member.name}</p>
-            <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-muted">
+            <p className="font-display text-2xl tracking-tight text-ember/80">
+              {member.name}
+            </p>
+            <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.14em] text-muted">
               {member.role}
             </p>
           </div>
