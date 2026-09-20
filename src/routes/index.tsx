@@ -182,7 +182,7 @@ function Work() {
             className={`group block animate-rise-slow ${item.offset ? "mt-6" : ""}`}
             style={{ animationDelay: `${index * 80}ms` }}
           >
-            <div className="bg-foreground/5 outline outline-1 -outline-offset-1 outline-black/5 rounded-lg overflow-hidden">
+            <div className="bg-foreground/5 outline outline-1 -outline-offset-1 outline-border rounded-lg overflow-hidden">
               <img
                 src={item.image}
                 alt={item.title}
@@ -233,7 +233,7 @@ function About() {
             className="animate-rise-slow"
             style={{ animationDelay: `${160 + index * 80}ms` }}
           >
-            <div className="aspect-[3/4] bg-foreground/5 outline outline-1 -outline-offset-1 outline-black/5 rounded-lg overflow-hidden">
+            <div className="aspect-[3/4] bg-foreground/5 outline outline-1 -outline-offset-1 outline-border rounded-lg overflow-hidden">
               <img
                 src={member.image}
                 alt={member.name}
@@ -265,7 +265,7 @@ function Testimonial() {
           "MKTJ gave our brand a spine. It finally looks like who we actually are."
         </p>
         <footer className="mt-5 flex items-center gap-3">
-          <div className="size-11 bg-foreground/5 outline outline-1 -outline-offset-1 outline-black/5 rounded-full overflow-hidden">
+          <div className="size-11 bg-foreground/5 outline outline-1 -outline-offset-1 outline-border rounded-full overflow-hidden">
             <img
               src={testimonialLena}
               alt="Lena Ortiz"
