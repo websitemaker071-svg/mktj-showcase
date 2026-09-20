@@ -139,33 +139,58 @@ const services = [
   },
   {
     num: "04",
+    name: "Animation Editing",
+    desc: "2D animation, motion stories and animated ads.",
+  },
+  {
+    num: "05",
     name: "Brand Identity",
     desc: "Strategy, naming and complete visual systems.",
   },
   {
-    num: "05",
+    num: "06",
     name: "UI/UX Design",
     desc: "Interfaces and flows for apps and products.",
   },
   {
-    num: "06",
+    num: "07",
     name: "Motion Graphics",
     desc: "Animated titles, explainers and brand loops.",
   },
   {
-    num: "07",
+    num: "08",
     name: "Social Media Marketing",
     desc: "Content planning, posting and campaign design.",
   },
   {
-    num: "08",
+    num: "09",
     name: "SEO & Ads",
     desc: "Search, paid media and conversion tracking.",
   },
   {
-    num: "09",
+    num: "10",
+    name: "Instagram Collabs",
+    desc: "Paid collaborations with 300k+ creator accounts.",
+  },
+  {
+    num: "11",
+    name: "Google Business Setup",
+    desc: "Full Google Business, Maps and Search setup.",
+  },
+  {
+    num: "12",
+    name: "Content Writing",
+    desc: "Scripts, captions, blogs and screenwriting.",
+  },
+  {
+    num: "13",
     name: "Album Design",
     desc: "Music artwork, cover art and release packages.",
+  },
+  {
+    num: "14",
+    name: "Business Tips",
+    desc: "Practical growth and branding advice for owners.",
   },
 ];
 
