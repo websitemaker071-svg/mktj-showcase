@@ -334,11 +334,11 @@ function Contact() {
             Tell us what you're building. We reply within two working days.
           </p>
           <a
-            href="mailto:hello@mktj.studio"
+            href="mailto:designhub370@gmail.com"
             className="mt-6 inline-flex items-center gap-2 bg-ember text-background text-sm font-medium px-5 py-3.5 rounded-lg transition-colors duration-200 hover:bg-ember-soft animate-rise"
             style={{ animationDelay: "180ms" }}
           >
-            hello@mktj.studio
+            designhub370@gmail.com
           </a>
         </div>
       </div>
