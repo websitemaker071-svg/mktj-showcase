@@ -4,10 +4,6 @@ import workVantage from "../assets/work-vantage.jpg";
 import workNorthwind from "../assets/work-northwind.jpg";
 import workFrame09 from "../assets/work-frame09.jpg";
 import workKettle from "../assets/work-kettle.jpg";
-import teamAri from "../assets/team-ari.jpg";
-import teamSana from "../assets/team-sana.jpg";
-import teamDev from "../assets/team-dev.jpg";
-import testimonialLena from "../assets/testimonial-lena.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -170,6 +166,11 @@ const services = [
     name: "SEO & Ads",
     desc: "Search, paid media and conversion tracking.",
   },
+  {
+    num: "09",
+    name: "Album Design",
+    desc: "Music artwork, cover art and release packages.",
+  },
 ];
 
 function Services() {
@@ -274,9 +275,9 @@ function Work() {
 }
 
 const teamMembers = [
-  { image: teamAri, name: "Ari Malik", role: "Director" },
-  { image: teamSana, name: "Sana Riaz", role: "Lead dev" },
-  { image: teamDev, name: "Dev Kapoor", role: "Motion" },
+  { initials: "AM", name: "Ari Malik", role: "Director" },
+  { initials: "SR", name: "Sana Riaz", role: "Lead dev" },
+  { initials: "DK", name: "Dev Kapoor", role: "Motion" },
 ];
 
 function About() {
@@ -303,15 +304,10 @@ function About() {
             className="animate-rise-slow"
             style={{ animationDelay: `${160 + index * 80}ms` }}
           >
-            <div className="aspect-[3/4] bg-foreground/5 outline outline-1 -outline-offset-1 outline-border rounded-lg overflow-hidden">
-              <img
-                src={member.image}
-                alt={member.name}
-                width={816}
-                height={816}
-                loading="lazy"
-                className="w-full h-full object-cover"
-              />
+            <div className="aspect-[3/4] flex items-center justify-center bg-foreground/5 outline outline-1 -outline-offset-1 outline-border rounded-lg">
+              <span className="font-display text-4xl text-ember/60">
+                {member.initials}
+              </span>
             </div>
             <p className="mt-2 text-sm font-medium">{member.name}</p>
             <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-muted">
@@ -335,15 +331,8 @@ function Testimonial() {
           "MKTJ gave our brand a spine. It finally looks like who we actually are."
         </p>
         <footer className="mt-5 flex items-center gap-3">
-          <div className="size-11 bg-foreground/5 outline outline-1 -outline-offset-1 outline-border rounded-full overflow-hidden">
-            <img
-              src={testimonialLena}
-              alt="Lena Ortiz"
-              width={816}
-              height={816}
-              loading="lazy"
-              className="w-full h-full object-cover"
-            />
+          <div className="size-11 flex items-center justify-center bg-foreground/5 outline outline-1 -outline-offset-1 outline-border rounded-full">
+            <span className="font-display text-sm text-ember/60">LO</span>
           </div>
           <div>
             <p className="text-sm font-medium leading-tight">Lena Ortiz</p>
