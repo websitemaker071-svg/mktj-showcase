@@ -36,6 +36,7 @@ function Index() {
     <div className="min-h-screen bg-background text-foreground font-body antialiased selection:bg-ember/30">
       <Header />
       <Hero />
+      <Services />
       <Work />
       <About />
       <Testimonial />
