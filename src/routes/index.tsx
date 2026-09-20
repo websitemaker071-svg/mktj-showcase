@@ -283,7 +283,7 @@ function About() {
   return (
     <section id="about" className="px-5 py-14 border-t border-border max-w-6xl mx-auto">
       <span className="font-mono text-[11px] text-muted block mb-4 animate-fadein">
-        (02) — The studio
+        (03) — The studio
       </span>
       <h2 className="font-display uppercase text-4xl leading-[0.9] tracking-tight text-balance animate-rise">
         A small team with a loud point of view.
@@ -328,7 +328,7 @@ function Testimonial() {
   return (
     <section className="px-5 py-14 border-t border-border max-w-6xl mx-auto">
       <span className="font-mono text-[11px] text-muted block mb-5 animate-fadein">
-        (03) — In their words
+        (04) — In their words
       </span>
       <blockquote className="animate-rise-slow">
         <p className="font-display uppercase text-3xl leading-[1.05] tracking-tight text-balance">
