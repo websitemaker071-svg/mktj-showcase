@@ -242,7 +242,7 @@ function Work() {
     <section id="work" className="px-5 py-14 max-w-6xl mx-auto">
       <div className="flex items-end justify-between mb-6 animate-fadein">
         <h2 className="font-display uppercase text-4xl tracking-tight">Selected work</h2>
-        <span className="font-mono text-[11px] text-muted">(01)</span>
+        <span className="font-mono text-[11px] text-muted">(02)</span>
       </div>
       <div className="grid grid-cols-2 gap-4 max-w-4xl mx-auto">
         {workItems.map((item, index) => (
