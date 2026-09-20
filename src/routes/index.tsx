@@ -129,6 +129,75 @@ function Hero() {
   );
 }
 
+const services = [
+  {
+    num: "01",
+    name: "Graphic Design",
+    desc: "Logos, brand systems, print and social visuals.",
+  },
+  {
+    num: "02",
+    name: "Website Development",
+    desc: "Fast, responsive sites and e-commerce builds.",
+  },
+  {
+    num: "03",
+    name: "Video Editing",
+    desc: "Launch films, reels, ads and social cuts.",
+  },
+  {
+    num: "04",
+    name: "Brand Identity",
+    desc: "Strategy, naming and complete visual systems.",
+  },
+  {
+    num: "05",
+    name: "UI/UX Design",
+    desc: "Interfaces and flows for apps and products.",
+  },
+  {
+    num: "06",
+    name: "Motion Graphics",
+    desc: "Animated titles, explainers and brand loops.",
+  },
+  {
+    num: "07",
+    name: "Social Media Marketing",
+    desc: "Content planning, posting and campaign design.",
+  },
+  {
+    num: "08",
+    name: "SEO & Ads",
+    desc: "Search, paid media and conversion tracking.",
+  },
+];
+
+function Services() {
+  return (
+    <section id="services" className="px-5 py-14 border-t border-border max-w-6xl mx-auto">
+      <span className="font-mono text-[11px] text-muted block mb-4 animate-fadein">
+        (01) — Services
+      </span>
+      <h2 className="font-display uppercase text-4xl leading-[0.9] tracking-tight text-balance animate-rise">
+        Everything your brand needs.
+      </h2>
+      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+        {services.map((service, index) => (
+          <div
+            key={service.name}
+            className="p-4 rounded-lg bg-foreground/5 outline outline-1 -outline-offset-1 outline-border animate-rise-slow"
+            style={{ animationDelay: `${index * 60}ms` }}
+          >
+            <p className="font-mono text-[11px] text-ember">{service.num}</p>
+            <h3 className="mt-1.5 font-medium text-[15px]">{service.name}</h3>
+            <p className="mt-1 text-[13px] text-muted leading-relaxed">{service.desc}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 const workItems = [
   {
     image: workVantage,
