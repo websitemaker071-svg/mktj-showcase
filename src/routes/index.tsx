@@ -256,9 +256,9 @@ function Work() {
 }
 
 const teamMembers = [
-  { name: "Ari Malik", role: "Director" },
-  { name: "Sana Riaz", role: "Lead dev" },
-  { name: "Dev Kapoor", role: "Motion" },
+  { name: "MK", role: "Founder & Head" },
+  { name: "Manvik Tiwari", role: "Creative Lead" },
+  { name: "Jasanmeet Singh", role: "Client Lead" },
 ];
 
 function About() {
